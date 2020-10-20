@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `E-commerce Snipcart and Gatsby Starter`,
-    author: `Issy Dennis`,
-    description: `A simple e-commerce shop using Gatsby and Snipcart.`,
-    siteUrl: `https://gatsby-snipcart-starter.netlify.com/`,
+    title: `bcsPay`,
+    author: `Jacob Stordahl`,
+    description: `Pay for your Black Cat Services`,
+    siteUrl: `https://pay.blkcatstudio.com`,
   },
   plugins: [
     {
@@ -46,11 +46,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Snipcart Starter`,
-        short_name: `Gatsby Snipcart`,
+        name: `bcsPay`,
+        short_name: `bcsPay`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `thistle`,
+        background_color: `bg`,
+        theme_color: `darkBlue`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },
@@ -61,9 +61,9 @@ module.exports = {
       resolve: 'gatsby-plugin-snipcart',
       options: {
         //replace with own Snipcart API key
-        apiKey: 'MjQ2MDY4MDctMDZkYi00ZTY0LWFlODItNzhlMmEzZDg1NTBiNjM2OTc2Nzk1NjcwMTU3MTkx',
+        apiKey: 'MGNjODc0NDYtZDQ2OC00Zjk0LWI1MTktYmNmMTgxM2M5YzVmNjM3MzQxOTA2ODY1NTg0OTY1',
         autopop: true,
-          }
+        }
     },
     `gatsby-plugin-styled-components`,
   ],

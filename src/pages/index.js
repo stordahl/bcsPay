@@ -10,11 +10,12 @@ import SEO from "../components/seo"
 
 const ThumbnailsWrapper = styled.div`
     width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    grid-auto-rows: auto auto 500px;
     padding: 20px;
+    margin: 1rem auto;
 `
 
 class BlogIndex extends React.Component {

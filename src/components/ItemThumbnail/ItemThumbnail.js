@@ -5,21 +5,12 @@ import Img from "gatsby-image";
 
 
 const ItemThumbnailStyled = styled.div`
-    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px;
-    background: ${props => props.theme.colors.primaryAccent};
-
-    @media (max-width: 930px) {
-        width: 250px;
-      } 
-   
-      @media (max-width: 710px) {
-        width: 100%;
-      }
+    margin: 0 20px;
+    height: max-content;
 `
 
 const Heading = styled.h3`
@@ -28,7 +19,6 @@ const Heading = styled.h3`
     font-weight: 900;
     text-align: center;
     width: 100%;
-    min-height: 85px;
     margin: auto;
     
 `
@@ -45,8 +35,9 @@ const LinkStyled = styled(Link)`
 `
 
 const ImgStyled = styled(Img)`
-    width: 100%;
-    height: 350px;
+    width: 250px;
+    height: 250px;
+    
 
     @media (max-width: 930px) {
         height: 250px;
@@ -55,6 +46,7 @@ const ImgStyled = styled(Img)`
 
 const Price = styled.p`
     padding-bottom: 10px;
+    font-size:1.5rem;
 `
 
 const itemThumbnail = (props) => {
@@ -64,8 +56,8 @@ const itemThumbnail = (props) => {
                 <ImgStyled fluid={props.image} />
                 <Heading>{props.heading}</Heading>
             </LinkStyled>
-            <Price>£{props.price.toFixed(2)}</Price>
-        </ItemThumbnailStyled >
+            <Price>${props.price.toFixed(2)}</Price>
+        </ItemThumbnailStyled>
     )
 }
 

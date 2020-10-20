@@ -2,9 +2,18 @@
 // can be accessed in each styled component.
 
 export const theme = {
+    
     colors: {
         main: 'thistle', //used in header
-        primaryAccent: 'linen', //used for thumbnails on homepage and as price background
-        secondaryAccent: 'gainsboro', //used for header border and item buttons
+        primaryAccent: 'transparent', //used for thumbnails on homepage and as price background
+        secondaryAccent: '#999E90', //used for header border and item buttons
+        bg: '#E0DCD8',
+        black: '#1F1F1F',
+        lightOrange: '#DDA788',
+        darkOrange: '#BB5215',
+        lightBlue: '#E6F2FF',
+        darkBlue: '#A5C4E7',
+        lightGreen: '#999E90',
+        darkGreen: '#4E563E',
     }
 };

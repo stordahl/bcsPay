@@ -9,25 +9,19 @@ const HeaderMinorStyled = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: ${props => props.theme.colors.main};
     margin: 20px 0;
-    border: 4px solid ${props => props.theme.colors.secondaryAccent};
-
 `
-
 const ShopName = styled.h1`
     padding: 20px;
     font-family: Heebo, sans-serif;
-    font-size: 2em;
+    font-size: 6rem;
     font-weight: 700;
 `
-
 const LinkStyled = styled(Link)`
     box-shadow: none;
     text-decoration: none;
     color: inherit;
 `
-
 const CartSummary = styled.div`
     height: 100%;
     display: flex;
@@ -36,7 +30,6 @@ const CartSummary = styled.div`
     padding: 10px;
     font-weight: bold;
 `
-
 class HeaderMinor extends Component {
     state = {
         items: 0
@@ -82,7 +75,7 @@ class HeaderMinor extends Component {
                 </ShopName>
                 <CartSummary className="snipcart-summary">
                     <a href="#" className="snipcart-checkout"> <ShoppingCart size='40px' /></a>
-                    <p>{this.state.items} yummy items</p>
+                    <p>{this.state.items} items in cart</p>
                 </CartSummary>
 
             </HeaderMinorStyled>

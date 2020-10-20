@@ -3,8 +3,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import { theme } from '../styles/theme';
 import { GlobalStyle } from '../styles/globalStyle';
 
-import HeaderMain from './Headers/HeaderMain';
-import HeaderMinor from './Headers/HeaderMinor';
+import Header from './Header';
 
 
 const PageWrapper = styled.div`
@@ -22,14 +21,14 @@ const MainSection = styled.main`
 const FooterStyled = styled.footer`
   width: 100%;
   padding: 20px;
-  text-align: right;
+  text-align: center;
 
   @media (max-width: 600px) {
     text-align: center;
   }
 `
 const ExternalLink = styled.a`
-  color: #c59fc5;
+  color: ${theme.colors.black};
 `
 
 
@@ -45,31 +44,17 @@ class Layout extends React.Component {
   render() {
     const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    const siteName = "Gwen's Cake Shop"
-    let header
-
-    if (location.pathname === rootPath) {
-      header = (
-        <HeaderMain shopName={siteName}>
-        </HeaderMain>
-      )
-    } else {
-      header = (
-        <HeaderMinor shopName={siteName}>
-        </HeaderMinor>
-      )
-    }
+    const siteName = "bcsPay"
 
     return (
       <ThemeProvider theme={theme}>
         <>
           <GlobalStyle />
           <PageWrapper>
-            {header}
+            <Header shopName={siteName}/>
             <MainSection>{children}</MainSection>
             <FooterStyled>
-              <strong>Gatsby Snipcart Starter
-           - Made by <ExternalLink href="https://www.issydennis.com/" target="_blank" rel="noopener noreferrer">Issy Dennis</ExternalLink>
+              <strong>Built with Gatsby by  <ExternalLink href="https://blkcatstudio.com" target="_blank" rel="noopener noreferrer">Black Cat Studio</ExternalLink>
               </strong>
             </FooterStyled>
           </PageWrapper>

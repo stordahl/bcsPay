@@ -1,6 +1,12 @@
 import { createGlobalStyle } from 'styled-components'
+import  { theme }  from './theme'
 
 export const GlobalStyle = createGlobalStyle`
+
+    html{
+       background: ${ theme.colors.bg };
+       color: ${ theme.colors.black };
+    }
 
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -54,7 +60,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
       padding: 0;
       margin: 0;
-      font-family: Montserrat, sans-serif;
+      font-family: 'Mukta Mahee', sans-serif;
       font-display: block;
 
     }
