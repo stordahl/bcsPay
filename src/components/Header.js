@@ -14,7 +14,7 @@ const HeaderMinorStyled = styled.div`
 const ShopName = styled.h1`
     padding: 20px;
     font-family: Heebo, sans-serif;
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: 700;
 `
 const LinkStyled = styled(Link)`

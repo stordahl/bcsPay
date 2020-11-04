@@ -34,6 +34,10 @@ const LinkStyled = styled(Link)`
     justify-content: center;
 `
 
+const DescStyled = styled.div`
+
+`
+
 const ImgStyled = styled(Img)`
     width: 250px;
     height: 250px;
@@ -56,6 +60,9 @@ const itemThumbnail = (props) => {
                 <ImgStyled fluid={props.image} />
                 <Heading>{props.heading}</Heading>
             </LinkStyled>
+            <DescStyled>
+                {props.description}
+            </DescStyled>
             <Price>${props.price.toFixed(2)}</Price>
         </ItemThumbnailStyled>
     )

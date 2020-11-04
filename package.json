@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-snipcart-starter",
+  "name": "bcs-pay",
   "private": true,
-  "description": "A starter for a simple e-commerce site using Snipcart",
+  "description": "",
   "version": "0.1.0",
-  "author": "Issy Dennis <hello@issydennis.com>",
+  "author": "Jacob Stordahl <jacob@blkcatstudio.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.11.1",
     "gatsby": "^2.24.82",
